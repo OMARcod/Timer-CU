@@ -1,7 +1,6 @@
 #pragma once
 #include <chrono>
 #include <iostream>
-#include <thread>
 
 namespace CommonUtilities
 {
@@ -18,10 +17,8 @@ namespace CommonUtilities
 		double GetTotalTime() const;
 
 	private:
-		std::chrono::time_point<std::chrono::steady_clock> myEndTime;
 		std::chrono::time_point<std::chrono::steady_clock> myStartTime;
-		std::chrono::duration<double> myTotalDuration;
-		std::chrono::duration<float, std::milli> myDeltaTime;
+		std::chrono::time_point<std::chrono::steady_clock> myTotalTime;
 	};
 }
 
