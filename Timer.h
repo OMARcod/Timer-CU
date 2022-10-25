@@ -17,7 +17,7 @@ namespace CommonUtilities
 		double GetTotalTime() const;
 
 	private:
-		std::chrono::time_point<std::chrono::steady_clock> myStartTime;
+		std::chrono::time_point<std::chrono::steady_clock> myLastFrameTime;
 		std::chrono::time_point<std::chrono::steady_clock> myTotalTime;
 	};
 }
